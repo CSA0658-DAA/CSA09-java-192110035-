@@ -1,0 +1,89 @@
+Q1
+
+public class ReverseAlphabet {
+    public static void main(String[] args) {
+        printAlphabetReverse();
+    }
+
+    public static void printAlphabetReverse() {
+        char startChar = 'Z';
+        char endChar = 'A';
+
+        System.out.println("Alphabet in Reverse Order:");
+
+        for (char ch = startChar; ch >= endChar; ch--) {
+            System.out.print(ch + " ");
+        }
+    }
+}
+
+
+Q2
+import java.util.Scanner;
+
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the number of terms in the Fibonacci series: ");
+        int n = scanner.nextInt();
+
+        System.out.println("Fibonacci Series:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+    }
+
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+}
+
+
+
+
+
+Q3
+
+import java.util.Scanner;
+
+public class LCMAndGCDCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+
+        int gcd = findGCD(num1, num2);
+        int lcm = findLCM(num1, num2);
+
+        System.out.println("GCD of " + num1 + " and " + num2 + " is: " + gcd);
+        System.out.println("LCM of " + num1 + " and " + num2 + " is: " + lcm);
+
+        scanner.close();
+    }
+
+    // Function to find the GCD (Greatest Common Divisor) using Euclidean Algorithm
+    private static int findGCD(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    // Function to find the LCM (Least Common Multiple) using the GCD
+    private static int findLCM(int a, int b) {
+        return (a * b) / findGCD(a, b);
+    }
+}
+
+
