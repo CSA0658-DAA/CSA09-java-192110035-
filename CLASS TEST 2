@@ -7,19 +7,19 @@ public class RightTrianglePattern {
         System.out.print("Enter the value of n: ");
         int n = scanner.nextInt();
 
-        // Print right-angled triangle pattern
+        
         for (int i = 1; i <= n; i++) {
-            // Print spaces
+        
             for (int j = 1; j <= n - i; j++) {
                 System.out.print(" ");
             }
 
-            // Print stars
+         
             for (int k = 1; k <= i; k++) {
                 System.out.print("* ");
             }
 
-            // Move to the next line after each row
+           
             System.out.println();
         }
     }
@@ -113,24 +113,24 @@ public class SingleDigitSum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input: Get a positive integer from the user
+       
         System.out.print("Enter a positive integer: ");
         int n = scanner.nextInt();
 
-        // Calculate the single-digit sum
+       
         int singleDigitSum = calculateSingleDigitSum(n);
 
-        // Display the result
+      
         System.out.println("The single-digit sum is: " + singleDigitSum);
 
         scanner.close();
     }
 
-    // Function to calculate the single-digit sum
+   
     private static int calculateSingleDigitSum(int number) {
         int sum = 0;
 
-        // Continue calculating sum until a single-digit sum is obtained
+        
         while (number > 0 || sum > 9) {
             if (number == 0) {
                 number = sum;
