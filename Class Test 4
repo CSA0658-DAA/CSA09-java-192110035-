@@ -1,0 +1,73 @@
+Q-1
+import java.util.*;
+public class countcomprim {
+
+	public static void main(String[] args) {
+	int n;
+	int num[];
+	int comp=0,prim=0,i,c=0;
+	Scanner s=new Scanner (System.in);
+	System.out.print("Enter the number : ");
+	n=s.nextInt();
+	System.out.print("Enter the numbers : ");
+	for(i=0;i<=n;i++)
+	{num=s.nextInt();
+	}
+	for (i=1;i<=num.length;i++)
+	{     for (int j=1;j<num[i];j++)
+          {   if (num[i]%j==0)
+               c++;
+            }
+    if (c>1)
+        comp++;
+      else
+        prim++;
+    }
+System.out.print("The number of composite numbers is "+comp);
+System.out.print("The number of prime numbers is  "+prim);
+}
+}   
+
+
+Q--2
+import java.util.*;
+public class nooffactors {
+public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.print("Enter the number : ");
+		int n=s.nextInt();
+		int fact=0;
+		for(int i=1;i<=n;i++)
+		{
+		 if(n%i==0)
+		 fact=fact+1;
+		}
+		System.out.print("Number of factors = "+fact);
+		System.out.print("\nThe factors of "+n+"is ");
+		for(int i=1;i<=n;i++)
+		{
+		 if(n%i==0)
+			 System.out.print(i+" ");
+		}
+}
+}
+
+
+
+Q--3
+
+import java.util.*;
+public class righttiangle {
+	public static void main(String[] args) {
+		int i,j,n;
+		System.out.print("Enter the number : ");
+		Scanner s=new Scanner(System.in);
+		n=s.nextInt();
+		for (i=1;i<=n;i++)
+		{ for (j=1;j<=i;j++)
+		  { System.out.print("* ");} 
+		System.out.println();
+		}
+	}
+
+}
