@@ -1,0 +1,23 @@
+package java2;
+import java.util.*;
+public class compositenumbers {
+ public static void main (String[] args) {
+	 Scanner s=new Scanner(System.in); 
+	 System.out.print("Enter the numbers : ");
+	 int a=s.nextInt(); 
+	 int b=s.nextInt(); 
+	 System.out.print("Composite numbers from "+a+" to "+b+" is ");
+	 for(int i=a+1;i<=b;i++)
+	 { 
+	     int c=0; 
+	     for(int j=1;j<=b;j++) 
+	     { 
+	         if(i%j==0) 
+	             c++; 
+	     } 
+	     if(c>2) 
+	         System.out.print(i+" "); 
+	 } 
+
+ }
+}
