@@ -1,0 +1,24 @@
+package java2;
+import java.util.*;
+public class spcl {
+
+	public static void main(String[] args) {
+		 String stm;
+		  int i,alp=0,dig=0,spl=0;
+		  char ch;
+		   System.out.println("Enter the Statement : ");
+		   Scanner s=new Scanner(System.in);
+		   stm=s.nextLine();
+		     for (i=0;i<stm.length();i++) 
+		    {   ch=stm.charAt(i);
+		       if (ch >= 'a' && ch <='z' || ch>='A' && ch <='Z')
+		            { alp++ ;}
+		       else if ( ch >= '0' && ch<='9')
+		         { dig++; }
+		        else 
+		       { spl++; }
+		     }
+		  System.out.println("No of Special charcters are "+spl);
+	}
+
+}
