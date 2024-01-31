@@ -1,0 +1,17 @@
+package java1;
+import java.util.*;
+public class skipkinmton {
+	public static void main (String[] args){
+	Scanner input=new Scanner(System.in);
+	System.out.print("Enter numbers from and to  "); 
+	int m=input.nextInt(); 
+	int n=input.nextInt(); 
+	System.out.print("Enter number to be skiped : "); 
+	int k=input.nextInt(); 
+	System.out.print("Numers from "+m+" to "+n+" is "); 
+	for(int i=m;i<=n;i=i+k+1) 
+	{ 
+	System.out.print(i+" "); 
+	} 
+}
+}
