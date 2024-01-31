@@ -1,0 +1,30 @@
+import java.util.*;
+public class rectanglepattren {
+
+	public static void main(String[] args) {
+	    Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the symbol to use for the rectangle pattern: ");
+        char symbol = scanner.next().charAt(0);
+        System.out.print("Enter the number of rows for the rectangle pattern: ");
+        int rows = scanner.nextInt();
+        System.out.print("Enter the number of columns for the rectangle pattern: ");
+        int cols = scanner.nextInt();
+        for (int i = 0; i < cols; i++) {
+            System.out.print(symbol);
+        }
+        System.out.println();
+        for (int i = 0; i < rows - 2; i++) {
+            System.out.print(symbol);
+            for (int j = 0; j < cols - 2; j++) {
+                System.out.print(" ");
+            }
+            System.out.println(symbol);
+        }
+        for (int i = 0; i < cols; i++) {
+            System.out.print(symbol);
+        }
+        System.out.println();
+
+	}
+
+}
