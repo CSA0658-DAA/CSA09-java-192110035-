@@ -1,0 +1,27 @@
+package java1;
+import java.util.*;
+public class pattrenQ7 {
+	public static void main(String[] args) {
+		System.out.print("Enetr the number : ");
+		Scanner s=new Scanner (System.in);
+		int n=s.nextInt();
+		for(int i=1;i<=n;i++)
+		{
+		 int a=1;
+		 for(int s1=1;s1<=n-i;s1++)
+		 {
+		 System.out.print(" ");
+		 }
+		 for(int j=1;j<=i;j++)
+		 {
+		 System.out.print(a+" ");
+		 a=a*(i-j)/j;
+		 }
+		 System.out.println();
+		}
+
+	}
+
+}
+
+
