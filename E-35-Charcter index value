@@ -1,0 +1,23 @@
+package java2;
+import java.util.*;
+public class charindexval {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.print("Eneter the statement  : ");
+		String s1=s.nextLine();
+		System.out.print("Enter the Charcter to be find : ");
+		char c=s.next().charAt(0);
+		char A[]=new char[s1.length()];
+		int x=0,i;
+		for (i=0;i<s1.length();i++)
+		{	 A[i]=s1.charAt(i); 
+	    if(A[i]==c) 
+	    { 
+	        System.out.println(c+" is found in string at index: "+(i+1)); 
+	        x=1; 
+	    } 
+	} 
+	if(x==0) 
+	    System.out.print("character not found");
+	}
+}
