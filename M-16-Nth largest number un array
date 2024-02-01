@@ -1,0 +1,14 @@
+package java2;
+import java.util.*;
+public class nthlargenum {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in); 
+		int A[] = {14, 67, 48, 23, 5, 62}; 
+		int len = A.length; 
+		Arrays.sort(A); 
+		int N = 4; 
+		System.out.println(N + "th Largest number: " + A[len-N]); 
+
+	}
+
+}
