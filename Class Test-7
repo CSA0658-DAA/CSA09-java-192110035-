@@ -1,0 +1,58 @@
+    Q--1
+
+
+import java.util.*;
+public class frequencyofelements {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in); 
+		int A[]=new int[] {1,2,8,3,2,2,2,5,1}; 
+		int t[]=new int[A.length]; 
+		int k=-1; 
+		System.out.println("Frequency of Elements : ");
+		for(int i=0;i<A.length;i++) 
+		{ 
+		int count=1; 
+		for(int j=i+1;j<A.length;j++) 
+		{ 
+		if(A[i]==A[j])  
+		{ 
+		count++; 
+		t[j]=k; 
+		} 
+		} 
+		if(t[i]!=k) 
+		t[i]=count; 
+		} 
+		for(int i=0;i<A.length;i++) 
+		{ 
+		if(t[i]!=k)
+		System.out.println(A[i]+"  "+t[i]); 
+		} 
+ 	}
+
+}
+
+
+
+     Q---3
+
+
+package java2;
+import java.util.*;
+public class lengthofword {
+	public static void main(String[] args) { 
+		        Scanner input = new Scanner(System.in);
+		        System.out.println("Enter the String: ");
+		        String name = input.nextLine();
+      		        String[] n = name.split(" ");
+		        if (n.length > 0) {
+		            String l = n[n.length - 1];
+		            int len = l.length();
+		            System.out.println("Length of the last word: " + len);
+		        } else
+		        { 
+		            System.out.println("No words entered.");
+		        }
+		        input.close() ;
+	}
+		}
