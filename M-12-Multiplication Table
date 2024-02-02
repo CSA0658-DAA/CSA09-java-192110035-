@@ -1,0 +1,17 @@
+package java2;
+import java.util.*;
+public class multiplitable {
+	public static void main(String[] args) {
+		Scanner s=new Scanner (System.in); 
+		System.out.println("Enter the M value : ");
+		int M=s.nextInt();
+		System.out.println("Enter the N value : ");
+		int N=s.nextInt(); 
+		for(int i=1;i<=N;i++) 
+		{ 
+		    System.out.println(i+"x"+M+"="+(i*M)); 
+		} 
+
+	}
+
+}
