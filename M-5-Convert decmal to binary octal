@@ -1,0 +1,15 @@
+package java2;
+import java.util.Scanner;
+public class decmltooctalbinary {
+	public static void main(String[] args) {
+		int dec;
+		Scanner s=new Scanner(System.in);
+		System.out.print("Enter the Decimal number :");
+		dec=s.nextInt();
+		String bin=Integer.toBinaryString(dec); 
+		String oct=Integer.toOctalString(dec); 
+		System.out.println("Binary number = "+bin); 
+		System.out.print("octal number = "+oct); 
+	}
+
+}
