@@ -1,0 +1,29 @@
+package java2;
+import java.util.*;
+public class gread {
+	public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+	int m1,m2,m3,m4;
+	System.out.print("Enter the marks in test-1 : ");
+     m1=s.nextInt();
+     System.out.print("Enter the marks in test-2 : ");
+     m2=s.nextInt();
+     System.out.print("Enter the marks in test-3 : ");
+     m3=s.nextInt();
+     System.out.print("Enter the marks in test-4 : ");
+     m4=s.nextInt();
+     int total= m1+m2+m3+m4;
+     System.out.println("Total  marks in tests : "+total);
+     float agg=(m1+m2+m3+m4)/4f;
+     System.out.println("Aggregate marks in tests : "+agg);
+     if (agg >75)
+    	 System.out.println("DISTINCTION"); 
+     else if (60<=agg && agg<75)
+    	 System.out.println("FIRST DIVISION"); 
+     else if(agg>=50 && agg<60) 
+    	 System.out.println("Second Division"); 
+    	 else if(agg>=40 && agg<50) 
+    	 System.out.println("Third Division"); 
+    	 else System.out.println("Fail"); 
+	}
+}
