@@ -1,0 +1,36 @@
+package m1;
+import java.util.*;
+public class intrest 
+			{ float getROI() 
+			    { 
+			        return 0; 
+			    } 
+			} 
+			class SBI extends intrest 
+			{ 
+			    float getROI() 
+			    { 
+			        return 8.4f; 
+			    } 
+			} 
+			class ICICI extends intrest 
+			{ 
+			    float getROI() 
+			    { 
+			        return 7.3f; 
+			    } 
+			} 
+			class AXIS extends intrest 
+			{ 
+			    float getROI() 
+			    { 
+			        return 9.7f; 
+			    } 
+			} 
+			public class intrest { 
+			    public static void main(String[] args) { 
+			        interst b; 
+			        b = new SBI(); 
+			        System.out.println("SBI, " + b.getROI());  
+			} 
+		}
